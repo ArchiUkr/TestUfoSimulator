@@ -1444,6 +1444,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3779832952285027715}
+  - {fileID: 4816811907582706778}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1490,6 +1491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   health: 3
+  explosionParticle: {fileID: 4816811907582706781}
+  UfoMesh: {fileID: 6099601990587033505}
 --- !u!114 &-5692232286235132078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2914,3 +2917,70 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &4775093478088732664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4594718738616475762}
+    m_Modifications:
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43992357063207847, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+      propertyPath: m_Name
+      value: Explosion VFX UFO
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+--- !u!4 &4816811907582706778 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 43992357063207842, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+  m_PrefabInstance: {fileID: 4775093478088732664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4816811907582706781 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 43992357063207845, guid: 5af54a0b1d9cdcc4897a7fb9ff5762dd, type: 3}
+  m_PrefabInstance: {fileID: 4775093478088732664}
+  m_PrefabAsset: {fileID: 0}

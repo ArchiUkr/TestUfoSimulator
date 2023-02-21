@@ -7,7 +7,8 @@ public class UfoMovement : MonoBehaviour
     public float speed;
     public int health = 3;
     private Vector3 targetPosition;
-
+    public ParticleSystem explosionParticle;
+    public GameObject UfoMesh;
     private void Start()
     {
         targetPosition = RandomPositionOnPlane();
@@ -24,7 +25,11 @@ public class UfoMovement : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            UfoMesh.SetActive(false);
+            GetComponent<SphereCollider>().enabled = false;
+            GetComponent<UfoMovement>().enabled = false;
+            explosionParticle.Play();
+            StartCoroutine(UfoExplosive());
         }
     }
 
@@ -35,6 +40,12 @@ public class UfoMovement : MonoBehaviour
         {
             health--;
         }
+    }
+    IEnumerator UfoExplosive()
+    {
+        
+        yield return new WaitForSeconds(0.5f);
+        Destroy(gameObject);
     }
 
     private Vector3 RandomPositionOnPlane()
