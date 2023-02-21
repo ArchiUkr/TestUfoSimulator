@@ -36,7 +36,6 @@ public class OutLineSelection : MonoBehaviour
                         selection.gameObject.GetComponent<Outline>().enabled = true;
                         highlight = null;
 
-                        Debug.Log("4");
                     }
                     else
                     {
@@ -44,7 +43,6 @@ public class OutLineSelection : MonoBehaviour
                         {
                             selection.gameObject.GetComponent<Outline>().enabled = false;
                             selection = null;
-                            Debug.Log("5");
                         }
                     }
                 }

@@ -42,8 +42,7 @@ public class UfoMovement : MonoBehaviour
         }
     }
     IEnumerator UfoExplosive()
-    {
-        
+    {       
         yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }

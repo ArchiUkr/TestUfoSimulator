@@ -7,18 +7,14 @@ public class Spawner : MonoBehaviour
     public GameObject[] ufoPrefabs;
     public float minSpawnTime = 2f;
     public float maxSpawnTime = 6f;
-
     public int minUfoStart = 3;
     public int maxUfoStart = 6;
-
     public int maxUfos = 30;
     public Vector2 boardSize = new Vector2(10f, 10f);
-
     private bool stopspawning = false;
 
     void Start()
     {
-
         SpawnUfo(Random.Range(minUfoStart, maxUfoStart));
         InvokeRepeating("SpawnInvokeUfo", Random.Range(minSpawnTime, maxSpawnTime), Random.Range(minSpawnTime, maxSpawnTime));
     }
