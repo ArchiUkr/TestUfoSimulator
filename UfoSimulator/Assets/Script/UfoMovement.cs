@@ -41,8 +41,7 @@ public class UfoMovement : MonoBehaviour
         targetPosition = RandomPositionOnPlane();
         if (collision.gameObject.tag == "Ufo")
         {
-            health--;
-            gameObject.GetComponent<UfoUI>().CheckHP();
+            health--;           
         }
     }
     IEnumerator UfoExplosive()

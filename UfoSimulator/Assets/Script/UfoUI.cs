@@ -10,36 +10,49 @@ public class UfoUI : MonoBehaviour
     private TMP_Text hpText;
     private RaycastHit raycastHit;
     private Transform selection;
+    private GameObject panelPilot;
+ 
     private void Awake()
     {     
-        nameCharacter = GameObject.Find("UI_TextName").GetComponent<TMP_Text>();
-        hpText = GameObject.Find("UI_TextHP").GetComponent<TMP_Text>();
+       nameCharacter = GameObject.Find("UI_TextName").GetComponent<TMP_Text>();
+       hpText = GameObject.Find("UI_TextHP").GetComponent<TMP_Text>();
+        panelPilot = GameObject.Find("PilotBackGround");
+    }
+
+    private void Start()
+    {
+        panelPilot.SetActive(false);
     }
 
     private void Update()
     {
+        
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
        
         if (!EventSystem.current.IsPointerOverGameObject() && Physics.Raycast(ray, out raycastHit))
         {
+            
             if (Input.GetMouseButtonDown(0))
             {
-              
-                hpText.text = "PILOT HP:" + raycastHit.collider.GetComponent<UfoMovement>().health.ToString();
-                nameCharacter.text = "NAME:" + raycastHit.collider.name;
+                if(panelPilot != null)
+                {
+                    panelPilot.SetActive(true);
+                }
                 selection = raycastHit.transform;
+                nameCharacter.text = "NAME:" + raycastHit.collider.name;
             }
            
         }
-
-    }
-
-    public void CheckHP()
-    {
         if (selection != null)
         {
             hpText.text = "PILOT HP:" + selection.gameObject.GetComponent<UfoMovement>().health.ToString();
         }
+        else
+        {
+            panelPilot.SetActive(false);
+        }
     }
+
+   
 
 }

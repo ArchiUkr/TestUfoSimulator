@@ -8,6 +8,7 @@ public class OutLineSelection : MonoBehaviour
     private Transform highlight;
     private Transform selection;
     private RaycastHit raycastHit;
+  
 
     void Update()
     {
@@ -26,7 +27,7 @@ public class OutLineSelection : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-
+                    
                     if (highlight)
                     {
                         if (selection != null)
@@ -51,6 +52,7 @@ public class OutLineSelection : MonoBehaviour
             else
             {
                 highlight = null;
+                 
 
             }
         }
