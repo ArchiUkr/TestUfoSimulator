@@ -134,13 +134,14 @@ GameObject:
   - component: {fileID: 5406021}
   - component: {fileID: 5406023}
   - component: {fileID: 5406022}
+  - component: {fileID: 5406024}
   m_Layer: 5
   m_Name: Calculate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5406021
 RectTransform:
   m_ObjectHideFlags: 0
@@ -156,7 +157,7 @@ RectTransform:
   - {fileID: 702346040}
   - {fileID: 1848933312}
   m_Father: {fileID: 1239269147}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.7803907, y: 0.44150767}
   m_AnchorMax: {x: 0.9605625, y: 0.86826146}
@@ -201,6 +202,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5406020}
   m_CullTransparentMesh: 1
+--- !u!114 &5406024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5406020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04fb2d89737831c4ba2f41c5886abd96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultText: {fileID: 739764463}
 --- !u!1 &9101158
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +457,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 157192637}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &157192637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,7 +657,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 162703276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &162703276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,7 +857,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 270928621}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &270928621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,7 +932,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338531661}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48b53a1a0cd81724fa8d56e5f9fb9b5c, type: 3}
   m_Name: 
@@ -1249,8 +1299,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294962432
-  m_fontColor: {r: 0, g: 0.93092275, b: 1, a: 1}
+    rgba: 4285131905
+  m_fontColor: {r: 0.5049627, g: 0.9245283, b: 0.41342112, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1875,7 +1925,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 619670947}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &619670947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2308,7 +2370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
   m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
@@ -2335,7 +2397,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 30
   m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2464,7 +2526,7 @@ GameObject:
   - component: {fileID: 752124338}
   - component: {fileID: 752124337}
   m_Layer: 5
-  m_Name: BackGround
+  m_Name: PilotBackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2614,7 +2676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 764099288}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &764099288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2736,7 +2810,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 787192007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &787192007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2993,7 +3079,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 894658957}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &894658957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3186,7 +3284,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1239269147}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3525,8 +3623,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294962432
-  m_fontColor: {r: 0, g: 0.93092275, b: 1, a: 1}
+    rgba: 4286622202
+  m_fontColor: {r: 0.9811321, g: 0.6645999, b: 0.50352436, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3752,9 +3850,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 752124336}
-  - {fileID: 971604056}
   - {fileID: 5406021}
   - {fileID: 1292266378}
+  - {fileID: 971604056}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3846,7 +3944,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1291543377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1291543377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3919,7 +4029,7 @@ RectTransform:
   m_Children:
   - {fileID: 2128736998}
   m_Father: {fileID: 1239269147}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.78151834, y: 0.88849247}
   m_AnchorMax: {x: 0.9616902, y: 0.96850765}
@@ -4439,7 +4549,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1643481886}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1643481886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4561,7 +4683,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1643722325}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: AddNumber
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1643722325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5030,7 +5164,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2030553689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: ClearNumber
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2030553689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5152,7 +5298,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2055787932}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5406024}
+        m_TargetAssemblyTypeName: Calculator, Assembly-CSharp
+        m_MethodName: CheckNumber
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2055787932
 MonoBehaviour:
   m_ObjectHideFlags: 0

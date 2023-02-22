@@ -7,6 +7,11 @@ public class OpenCalculator : MonoBehaviour
     public GameObject calculator;
 
 
+    private void Awake()
+    {
+        calculator.SetActive(false);
+    }
+
     public void Open()
     {
        if(calculator != null)

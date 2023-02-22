@@ -1422,8 +1422,8 @@ GameObject:
   - component: {fileID: 3785390891647154886}
   - component: {fileID: 3785390891647154887}
   - component: {fileID: -6804718494058267364}
-  - component: {fileID: -1098691463211305968}
   - component: {fileID: -4900551833028031341}
+  - component: {fileID: 6129302155031383371}
   m_Layer: 0
   m_Name: UFO_Yellow
   m_TagString: Ufo
@@ -1511,18 +1511,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &-1098691463211305968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3785390891647154888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b491c67107873bb4b925005b4f02f0f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &-4900551833028031341
 Animator:
   serializedVersion: 4
@@ -1543,6 +1531,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6129302155031383371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3785390891647154888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34199362e6c3ae048adc1cf149e72bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3933225128377459366
 GameObject:
   m_ObjectHideFlags: 0

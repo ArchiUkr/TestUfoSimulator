@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UfoMovement : MonoBehaviour
 {
@@ -9,14 +10,16 @@ public class UfoMovement : MonoBehaviour
     private Vector3 targetPosition;
     public ParticleSystem explosionParticle;
     public GameObject UfoMesh;
+
     private void Start()
     {
         targetPosition = RandomPositionOnPlane();
     }
 
+
     private void Update()
     {
-
+       
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
         if (transform.position == targetPosition)
         {
@@ -24,7 +27,7 @@ public class UfoMovement : MonoBehaviour
         }
 
         if (health <= 0)
-        {
+        {         
             UfoMesh.SetActive(false);
             GetComponent<SphereCollider>().enabled = false;
             GetComponent<UfoMovement>().enabled = false;
@@ -39,6 +42,7 @@ public class UfoMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ufo")
         {
             health--;
+            gameObject.GetComponent<UfoUI>().CheckHP();
         }
     }
     IEnumerator UfoExplosive()
@@ -53,4 +57,6 @@ public class UfoMovement : MonoBehaviour
         float z = Random.Range(-5f, 5f);
         return new Vector3(x, 0f, z);
     }
+
+  
 }
