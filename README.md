@@ -9,15 +9,15 @@ In the upper right corner there is a button to open the panel from the computer
 
 The machine works according to the principle:
 
--if the number is divisible by 3, "Marco" is displayed.
+- if the number is divisible by 3, "Marco" is displayed.
 
--if the number is divisible by 5, "Polo" is displayed.
+- if the number is divisible by 5, "Polo" is displayed.
 
 - if number is divisible by 3 and 5, "MarkoPolo" is displayed at the same time.
 
--If a number is not divisible by 3 and 5 it stays the same.
+- If a number is not divisible by 3 and 5 it stays the same.
 
--If the number is greater than 100 or equal to 0 then the machine is not working.
+- If the number is greater than 100 or equal to 0 then the machine is not working.
 
 ![photo_2023-02-24_02-40-50](https://user-images.githubusercontent.com/122678486/221056294-0a674eb5-edc8-49ac-83d7-f2b4632d0cb3.jpg)
 
