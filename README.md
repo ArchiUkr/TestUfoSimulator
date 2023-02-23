@@ -11,9 +11,9 @@ The machine works according to the principle:
 
 -if the number is divisible by 3, "Marco" is displayed.
 
--if it is divisible by 5 it will output "Polo".
+-if the number is divisible by 5, "Polo" is displayed.
 
--but if it is divisible by 3 and 5, "MarkoPolo" is displayed at the same time.
+- if number is divisible by 3 and 5, "MarkoPolo" is displayed at the same time.
 
 -If a number is not divisible by 3 and 5 it stays the same.
 
