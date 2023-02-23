@@ -9,11 +9,11 @@ In the upper right corner there is a button to open the panel from the computer
 
 The machine works according to the principle:
 
--if the number is divisible by three, "Marco" is displayed.
+-if the number is divisible by 3, "Marco" is displayed.
 
--if it is divisible by five it will output "Polo".
+-if it is divisible by 5 it will output "Polo".
 
--but if it is divisible by three and five, "MarkoPolo" is displayed at the same time.
+-but if it is divisible by 3 and 5, "MarkoPolo" is displayed at the same time.
 
 -If a number is not divisible by 3 and 5 it stays the same.
 
